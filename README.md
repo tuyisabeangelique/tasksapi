@@ -2,16 +2,14 @@
 
 A robust RESTful API for task management built with Spring Boot, featuring JWT authentication, role-based access control, PostgreSQL database, and comprehensive testing.
 
-## 🚀 Features
+## Features
 
-- **🔐 JWT Authentication** - Secure user registration and login
-- **👥 Role-Based Access Control** - Admin and Member roles with different permissions
-- **📝 Task Management** - Full CRUD operations for tasks
-- **🗄️ PostgreSQL Database** - Reliable data persistence
-- **🧪 Comprehensive Testing** - Unit tests, integration tests, and repository tests
-- **🐳 Docker Support** - Containerized deployment
-- **📊 Complex Queries** - Advanced database operations
-- **🔒 Spring Security** - Enterprise-grade security
+- **JWT Authentication** - Secure user registration and login
+- **Role-Based Access Control** - Admin and Member roles with different permissions
+- **Task Management** - Full CRUD operations for tasks
+- **PostgreSQL Database** - Reliable data persistence
+- **Comprehensive Testing** - Unit tests, integration tests, and repository tests
+- **Docker Support** - Containerized deployment
 
 ## 🛠️ Tech Stack
 
@@ -23,16 +21,16 @@ A robust RESTful API for task management built with Spring Boot, featuring JWT a
 - **Build Tool**: Maven
 - **Java Version**: 17
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Java 17 or higher
 - Maven 3.6+
 - PostgreSQL 15 (or Docker)
 - Docker & Docker Compose (optional)
 
-## 🚀 Quick Start
+## Quick Start
 
-### Option 1: Using Docker (Recommended)
+### Option 1: Using Docker 
 
 1. **Clone the repository**
    ```bash
@@ -70,7 +68,7 @@ A robust RESTful API for task management built with Spring Boot, featuring JWT a
    ./mvnw spring-boot:run
    ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -181,7 +179,7 @@ GET /api/test/admin
 Authorization: Bearer <your-jwt-token>
 ```
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 ### JWT Token Usage
 Include the JWT token in the Authorization header for protected endpoints:
@@ -199,7 +197,7 @@ Authorization: Bearer <your-jwt-token>
 - Role-based endpoint protection
 - CORS configuration for frontend integration
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 ```bash
@@ -217,7 +215,7 @@ Authorization: Bearer <your-jwt-token>
 - Separate test properties in `application-test.properties`
 - Mocked external dependencies
 
-## 🐳 Docker
+## Docker
 
 ### Build Image
 ```bash
@@ -240,60 +238,14 @@ docker compose down
 - **app**: Spring Boot application (port 8080)
 - **postgres**: PostgreSQL database (port 5432)
 
-## 📁 Project Structure
 
-```
-src/
-├── main/
-│   ├── java/com/example/tasksapi/
-│   │   ├── controller/          # REST controllers
-│   │   ├── model/              # Entity classes
-│   │   ├── repository/         # Data access layer
-│   │   ├── security/           # JWT and security config
-│   │   ├── service/            # Business logic
-│   │   └── payload/            # Request/Response DTOs
-│   └── resources/
-│       └── application.properties
-└── test/
-    ├── java/com/example/tasksapi/
-    │   ├── controller/         # Controller tests
-    │   ├── integration/        # Integration tests
-    │   ├── repository/         # Repository tests
-    │   └── security/           # Security tests
-    └── resources/
-        └── application-test.properties
-```
-
-## 🔧 Configuration
-
-### Environment Variables
-- `SPRING_PROFILES_ACTIVE`: Active Spring profile
-- `APP_JWT_SECRET`: JWT signing secret
-- `APP_JWT_EXPIRATION_MS`: JWT token expiration time
-- `SPRING_DATASOURCE_URL`: Database connection URL
-- `SPRING_DATASOURCE_USERNAME`: Database username
-- `SPRING_DATASOURCE_PASSWORD`: Database password
+## Configuration
 
 ### Database Schema
 - **users**: User accounts with roles
 - **task**: Task management data
 
-## 🚀 Deployment
-
-### Production Considerations
-1. Change default JWT secret
-2. Use strong database passwords
-3. Configure proper CORS settings
-4. Set up SSL/TLS
-5. Configure logging levels
-6. Set up monitoring and health checks
-
-### Health Check
-```http
-GET /actuator/health
-```
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -302,18 +254,14 @@ GET /actuator/health
 5. Ensure all tests pass
 6. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
+## Support
 
 For issues and questions:
 1. Check the existing issues
 2. Create a new issue with detailed information
 3. Include logs and error messages
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - [ ] Add task categories/tags
 - [ ] Implement task search and filtering
